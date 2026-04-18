@@ -1,26 +1,12 @@
 {
   "name": "tp-cicd-actions",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
     "lint": "eslint src/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/khaoula05/tp_cicd_actions.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/khaoula05/tp_cicd_actions/issues"
-  },
-  "homepage": "https://github.com/khaoula05/tp_cicd_actions#readme",
   "devDependencies": {
-    "eslint": "^9.0.0",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "eslint": "^9.0.0"
   }
 }

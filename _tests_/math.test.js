@@ -1,4 +1,3 @@
-// __tests__/math.test.js
 const { add, multiply, factorial } = require('../src/math');
 
 describe('add', () => {
