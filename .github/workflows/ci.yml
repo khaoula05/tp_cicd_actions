@@ -5,6 +5,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+    workflow_call: # Permet l'appel par d'autres workflows
 
 jobs:
   lint-and-test:
@@ -26,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Lancer le linting
-        run: npx eslint src/        # ✅ npx au lieu de npm run lint
+        run: npx eslint src/        
 
       - name: Lancer les tests avec couverture
         run: npm test
