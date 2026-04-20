@@ -1,17 +1,13 @@
 // eslint.config.js
-import js from "@eslint/js";
+const globals = require("globals");
 
-export default [
+module.exports = [
   {
     files: ["src/**/*.js"],
     languageOptions: {
       globals: {
-        module: "writable",
-        require: "readonly",
-        exports: "writable",
-        __dirname: "readonly",
-        __filename: "readonly",
-        process: "readonly"
+        ...globals.node,
+        ...globals.commonjs
       }
     },
     rules: {
